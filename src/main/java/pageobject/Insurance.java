@@ -19,6 +19,7 @@ public class Insurance {
 	private By insuranceCompany = By.xpath("//div[@class='_3xI1']//ul//li");
 	
 	private By policyNumber= By.xpath("//div[@class='_3_cL ']//input[@type='text']");
+	private By getPremiumButton = By.xpath("//button[contains(text(),'Get Premium')]");
 	
 
 	public Insurance(WebDriver driver) {
@@ -64,6 +65,8 @@ public class Insurance {
 	    WebElement yearDropdown = driver.findElement(By.id("dropdown-year"));
 	    Select year = new Select(yearDropdown);
 	    year.selectByVisibleText("2023");
+	    
+	    driver.findElement(getPremiumButton).click();
 	}
 
 
