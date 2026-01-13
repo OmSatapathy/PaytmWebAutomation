@@ -2,6 +2,7 @@ package pageobject;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,6 +38,24 @@ public class Homepage {
 		List<WebElement> allRechageItems = driver.findElements(allRechageLinks);
 		for (int i = 0; i < allRechageItems.size(); i++) {
 			System.out.println(allRechageItems.get(i).getText());
+			if(allRechageItems.get(i).getText().contains("LIC / Insurance")) {
+				allRechageItems.get(i).click();
+				break;
+			}
+		}
+		
+		
+	}
+	
+	public void windowHandle() {
+		String parentWindow =driver.getWindowHandle();
+		Set<String> allwindow =driver.getWindowHandles();
+		
+		for (String newwindow : allwindow) {
+			if(!newwindow.equalsIgnoreCase(parentWindow)) {
+				 driver.switchTo().window(newwindow);
+				 System.out.println(driver.getCurrentUrl());
+			}
 		}
 	}
 

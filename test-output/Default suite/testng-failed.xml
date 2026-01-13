@@ -5,7 +5,8 @@
     <classes>
       <class name="web.paytm.HomepageTest">
         <methods>
-          <include name="verifyRechage"/>
+          <include name="payInsurancePremium"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- web.paytm.HomepageTest -->
