@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-13T10:32:26 IST" name="Default suite" finished-at="2026-01-13T10:32:36 IST" duration-ms="9456">
+  <suite started-at="2026-01-13T14:11:45 IST" name="Default suite" finished-at="2026-01-13T14:11:51 IST" duration-ms="5527">
     <groups>
     </groups>
-    <test started-at="2026-01-13T10:32:26 IST" name="Default test" finished-at="2026-01-13T10:32:36 IST" duration-ms="9456">
-      <class name="web.paytm.Homepage">
-        <test-method signature="setUp()[pri:0, instance:web.paytm.Homepage@4562e04d]" started-at="2026-01-13T10:32:26 IST" name="setUp" finished-at="2026-01-13T10:32:36 IST" duration-ms="9404" status="PASS">
+    <test started-at="2026-01-13T14:11:45 IST" name="Default test" finished-at="2026-01-13T14:11:51 IST" duration-ms="5527">
+      <class name="web.paytm.HomepageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.paytm.HomepageTest@710f4dc7]" started-at="2026-01-13T14:11:45 IST" name="setUp" finished-at="2026-01-13T14:11:49 IST" duration-ms="3970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- web.paytm.Homepage -->
+        <test-method signature="verifyRechage()[pri:0, instance:web.paytm.HomepageTest@710f4dc7]" started-at="2026-01-13T14:11:49 IST" name="verifyRechage" finished-at="2026-01-13T14:11:51 IST" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRechage -->
+      </class> <!-- web.paytm.HomepageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

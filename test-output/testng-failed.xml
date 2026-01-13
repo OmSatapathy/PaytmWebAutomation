@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="web.paytm.Homepage">
+      <class name="web.paytm.HomepageTest">
         <methods>
+          <include name="verifyRechage"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- web.paytm.Homepage -->
+      </class> <!-- web.paytm.HomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
