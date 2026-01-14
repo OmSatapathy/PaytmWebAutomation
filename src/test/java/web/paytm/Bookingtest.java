@@ -11,6 +11,9 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageobject.FlightBooking;
+import pageobject.Homepage;
+import pageobject.PaymentService;
+import pageobject.PaymentService;
 
 public class Bookingtest {
 
@@ -19,12 +22,12 @@ public class Bookingtest {
 	@BeforeClass
 	public void setUp() throws FileNotFoundException {
 		ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--headless=new");
-	    options.addArguments("--no-sandbox");
-	    options.addArguments("--disable-dev-shm-usage");
-	    options.addArguments("--disable-gpu");
-	    options.addArguments("--window-size=1920,1080");
-		
+		options.addArguments("--headless=new");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--window-size=1920,1080");
+
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
@@ -32,11 +35,23 @@ public class Bookingtest {
 		System.out.println(driver.getTitle());
 	}
 
-	@Test
+//	@Test
 	public void flightBook() {
 		FlightBooking fb = new FlightBooking(driver);
 		fb.ticketBooking();
 
+	}
+
+//	@Test
+	public void verifyFooter() {
+		Homepage hm = new Homepage(driver);
+		hm.verifyFooter();
+	}
+
+	@Test
+	public void paymentServicetest() {
+		PaymentService pm = new PaymentService(driver);
+		pm.mouseOverPaymentServices();
 	}
 
 	@AfterClass
