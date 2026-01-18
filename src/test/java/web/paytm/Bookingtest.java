@@ -35,14 +35,14 @@ public class Bookingtest {
 		System.out.println(driver.getTitle());
 	}
 
-//	@Test
+	@Test
 	public void flightBook() {
 		FlightBooking fb = new FlightBooking(driver);
 		fb.ticketBooking();
 
 	}
 
-//	@Test
+	@Test
 	public void verifyFooter() {
 		Homepage hm = new Homepage(driver);
 		hm.verifyFooter();

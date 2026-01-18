@@ -40,6 +40,8 @@ public class HomepageTest {
 		driver.manage().window().maximize();
 		driver.get("https://paytm.com/");
 		System.out.println(driver.getTitle());
+		
+		System.out.println("*****");
 	}
 	
 	@Test(priority = 1)
