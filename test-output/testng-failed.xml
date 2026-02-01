@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="web.paytm.Bookingtest">
+      <class name="web.paytm.ScreenshootTest">
         <methods>
-          <include name="paymentServicetest"/>
-          <include name="flightBook"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="verifyScrrenShot"/>
+          <include name="verifyRecharge"/>
         </methods>
-      </class> <!-- web.paytm.Bookingtest -->
+      </class> <!-- web.paytm.ScreenshootTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
